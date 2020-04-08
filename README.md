@@ -28,7 +28,7 @@ Já no aplicativo, desenvolvido em React Native, foi feito apenas a área dos <i
 
 ## :rocket: Tecnologias
 
-### Back-End
+### Back-End (NodeJS)
 - [Node.js](https://nodejs.org/en/)
 - [Express](https://expressjs.com/pt-br/)
 - [Nodemon](https://www.npmjs.com/package/nodemon)
@@ -39,7 +39,7 @@ Já no aplicativo, desenvolvido em React Native, foi feito apenas a área dos <i
 - [Cross-Env](https://www.npmjs.com/package/cross-env)
 - [Supertest](https://www.npmjs.com/package/supertest)
 
-#### Comandos Back-End
+#### Comandos Back-End (NodeJS)
 ```bash
 $ npm init -y (start project)
 $ npm install express (framework)
@@ -58,23 +58,43 @@ $ npm install supertest (Test Request)
 $ npm test (Execute Test)
 ```
 
-
-### Front-End
+### Front-End (ReactJS)
 - [React](https://reactjs.org)
 - [React Icons](https://www.npmjs.com/package/react-icons)
 - [Axios](https://www.npmjs.com/package/axios)
-- [React-dom](https://pt-br.reactjs.org/docs/react-dom.html)
 - [React-router-dom](https://www.npmjs.com/package/react-router-dom)
 - [Intl](https://www.npmjs.com/package/intl)
 
-## Mobile
+### Comandos Front-End (ReactJS)
+```bash
+$ npx create-react-app frontend  (start project)
+$ npm start  (start application)
+$ cleaning project src(remove -> README.md, App.css, App.test.js, index.css, logo.svg, serviceWorker.js, setupTests.js)
+$ cleaning project public(remove -> robots.txt, manigest.json, logo512.png, logo192.png)
+$ npm install react-icons (Icons)
+$ npm install react-router-dom (Routes)
+$ npm install axios (Connect backend - Client HTTP)
+```
+
+## Mobile (React Native)
 - [React Native](https://facebook.github.io/react-native/)
 - [Expo](https://expo.io/)
-- [Expo Mail Composer](https://docs.expo.io/versions/latest/sdk/mail-composer/)
-- [React Icons](https://www.npmjs.com/package/react-icons)
+- [Expo Constants](https://www.npmjs.com/package/expo-constants)
+- [Expo Mail Composer](https://www.npmjs.com/package/expo-mail-composer)
 - [Axios](https://www.npmjs.com/package/axios)
 - [Intl](https://www.npmjs.com/package/intl)
 
+### Comandos Front-End (React Native)
+```bash
+$ npm install -g expo-cli  (install expo global)
+$ expo init mobile (create project)
+$ Install expo in android/IOS
+$ yarn start (start application)
+$ expo install expo-constants (package)
+$ expo install expo-mail-composer (mail expo)
+$ yarn add axios (Connect backend - Client HTTP)
+$ yarn add intl (FormatNumber)
+```
 
 ## :information_source: Como usar ?
 
@@ -89,46 +109,3 @@ $ npm test (Execute Test)
 ### Mobile React Native
 - Instale as dependencias: npm install
 - Execute a aplicação: npm start
-
-
-### Comandos Executados -  NodeJS
-- npm init -y (start project)
-- npm install express (framework)
-- node index.js (start application)
-- npm install nodemon -D (Reload application)
-- npm install knex (Query Builder)
-- npm install sqlite3 (Database)
-- npx knex migrate:make create_ongs (create migrations)
-- npx knex migrate:latest (execute migrations)
-- npx knex (list commands knex)
-- npm install celebrate (validation - integrates validation with express)
-- npm install jest (TDD)
-- npx jest --init (Execute init jest)
-- npm install cross-env (Run scripts that set and use environment variables across platforms)
-- npm install supertest (Test Request)
-- npm test (Execute Test)
-
-
-## Comandos Executados - ReactJS
-- npx create-react-app frontend  (start project)
-- npm start  (start application)
-- cleaning project src(remove -> README.md, App.css, App.test.js, index.css, logo.svg, serviceWorker.js, setupTests.js)
-- cleaning project public(remove -> robots.txt, manigest.json, logo512.png, logo192.png)
-- npm install react-icons (Icons)
-- npm install react-router-dom (Routes)
-- npm install axios (Connect backend - Client HTTP)
-
-
-## Iniciar -  React Native
-- Instale as dependencias: npm install
-- Execute a aplicação: npm start
-
-## Comandos Executados - React Native
-- npm install -g expo-cli  (install expo global)
-- expo init mobile (create project)
-- Install expo in android/IOS
-- yarn start (start application)
-- expo install expo-constants (package)
-- expo install expo-mail-composer (mail expo)
-- yarn add axios (Connect backend - Client HTTP)
-- yarn add intl (FormatNumber)
